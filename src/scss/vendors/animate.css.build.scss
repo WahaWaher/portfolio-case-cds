@@ -1,0 +1,40 @@
+@import '../settings';
+
+/*!
+ * animate.css (Custom Build) -https://daneden.github.io/animate.css/
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ * Copyright (c) 2019 Daniel Eden
+ */
+
+$animate-scss-default-duration: .75s;
+$animate-scss-second-delays: (); // (1, 2, 3)
+$animate-scss-durations: (
+  // fast: 800ms,
+  // faster: 500ms,
+  // slow: 2s,
+  // slower: 3s,
+);
+
+@import "@brightleaf/animate.scss/source/settings";
+
+// Animations all
+// @import "@brightleaf/animate.scss/animate.scss";
+
+// Animation groups
+// @import '@brightleaf/animate.scss/source/attention_seekers';
+// @import '@brightleaf/animate.scss/source/bouncing_entrances';
+// @import '@brightleaf/animate.scss/source/bouncing_exits';
+@import '@brightleaf/animate.scss/source/fading_entrances';
+@import '@brightleaf/animate.scss/source/fading_exits';
+// @import '@brightleaf/animate.scss/source/flippers';
+// @import '@brightleaf/animate.scss/source/lightspeed';
+// @import '@brightleaf/animate.scss/source/rotating_entrances';
+// @import '@brightleaf/animate.scss/source/rotating_exits';
+// @import '@brightleaf/animate.scss/source/sliding_entrances';
+// @import '@brightleaf/animate.scss/source/sliding_exits';
+// @import '@brightleaf/animate.scss/source/specials';
+// @import '@brightleaf/animate.scss/source/zooming_entrances';
+// @import '@brightleaf/animate.scss/source/zooming_exits';
+
+// Animation common classes
+@import "@brightleaf/animate.scss/source/classes";

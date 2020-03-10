@@ -1,0 +1,54 @@
+AddDefaultCharset UTF-8
+AddCharset utf-8 .js .css .html
+
+# Client side browser caching
+<IfModule mod_expires.c>
+  # Expires directive support
+  ExpiresActive On
+  # Images
+  ExpiresDefault "access 7 days"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/x-javascript "access 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/x-icon "access 1 year"
+  ExpiresByType application/x-shockwave-flash "access 1 year"
+</IfModule>
+ 
+# Cache-Control
+<ifModule mod_headers.c>
+ 
+# Images
+<filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+  Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+ 
+# CSS/JS
+<filesMatch "\.(css|js)$">
+  Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+ 
+# XML/TXT
+<filesMatch "\.(xml|txt)$">
+  Header set Cache-Control "max-age=172800, public, must-revalidate"
+</filesMatch>
+ 
+# Use browser cache
+FileETag MTime Size
+<ifmodule mod_expires.c>
+<filesmatch ".(jpg|jpeg|gif|png|ico|css|js)$">
+  ExpiresActive on
+  ExpiresDefault "access plus 1 year"
+</filesmatch>
+</ifmodule>
+
+# Fonts
+<FilesMatch "\.(ttf|otf|eot|svg)$" >
+  SetOutputFilter DEFLATE
+</FilesMatch>
+
+ErrorDocument 404 /404.html

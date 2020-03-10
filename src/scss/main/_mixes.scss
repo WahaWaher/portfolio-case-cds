@@ -1,0 +1,57 @@
+/**
+ * Common application mixes (BEM)
+ */
+
+/**
+ * Block: text
+ */
+.text {
+  // Align
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+}
+
+/**
+ * Block: svg-icon
+ */
+.svg-icon {
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+/**
+ * Block: img-icon
+ */
+.svg-icon {
+  vertical-align: middle;
+}
+
+/**
+ * Block: bg
+ */
+.bg {
+  &-cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+/**
+ * OFI classes
+ */
+.img-cover {
+  object-fit: cover;
+  font-family: "object-fit: cover;";
+}
+.img-contain {
+  object-fit: contain;
+  font-family: "object-fit: contain;";
+}

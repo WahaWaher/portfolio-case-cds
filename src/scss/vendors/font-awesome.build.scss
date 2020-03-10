@@ -1,0 +1,34 @@
+@import '../settings';
+
+/*!
+ * Font Awesome Free 5.12.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+
+// Basic settings
+$fa-font-path: '../../fonts/FontAwesome';
+$fa-font-size-base: $app-font-size;
+$fa-font-display: swap;
+
+@import '@fortawesome/fontawesome-free/scss/variables';
+@import '@fortawesome/fontawesome-free/scss/mixins';
+@import '@fortawesome/fontawesome-free/scss/core';
+// @import '@fortawesome/fontawesome-free/scss/larger';
+// @import '@fortawesome/fontawesome-free/scss/fixed-width';
+// @import '@fortawesome/fontawesome-free/scss/list';
+// @import '@fortawesome/fontawesome-free/scss/bordered-pulled';
+// @import '@fortawesome/fontawesome-free/scss/animated';
+// @import '@fortawesome/fontawesome-free/scss/rotated-flipped';
+// @import '@fortawesome/fontawesome-free/scss/stacked';
+// @import '@fortawesome/fontawesome-free/scss/screen-reader';
+
+// Icons by the piece
+// .#{$fa-css-prefix}-angry:before { content: fa-content($fa-var-angry); }
+
+// All icons CSS
+@import '@fortawesome/fontawesome-free/scss/icons';
+
+// Fonts CSS
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/regular';
+// @import '@fortawesome/fontawesome-free/scss/solid';
+// @import '@fortawesome/fontawesome-free/scss/brands';
