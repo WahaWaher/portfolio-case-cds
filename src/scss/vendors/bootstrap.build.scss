@@ -1,3 +1,10 @@
+/*!
+ * Bootstrap v4 Grid and Utilities (custom build) (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
 @import '../settings';
 
 // Bootstrap-grid
@@ -10,7 +17,6 @@ $grid-breakpoints: (
   // xxl: 1440px,
   // xxxl: 1920px
 );
-
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -19,12 +25,43 @@ $container-max-widths: (
   // xxl: 1380px,
   // xxxl: 1720px
 );
-
 $grid-columns: 12;
 $grid-gutter-width: 30px;
 
-@import 'bootstrap/scss/functions';
-@import 'bootstrap/scss/variables';
-@import 'bootstrap/scss/mixins/breakpoints';
+// Spacing
+$spacer: $app-font-size;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+);
 
-@import 'bootstrap/scss/bootstrap-grid';
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// Removing from maps:
+// $spacers: map-remove($spacers, 0, 1, 2, 3, 4, 5);
+
+// Grid: full
+// @import 'bootstrap/scss/bootstrap-grid';
+
+// Grid: parts
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/utilities/display";
+@import "bootstrap/scss/utilities/flex";
+@import "bootstrap/scss/utilities/spacing";
+
+// Utilities: Responsive text alignment
+// @each $breakpoint in map-keys($grid-breakpoints) {
+//   @include media-breakpoint-up($breakpoint) {
+//     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+//     .text#{$infix}-left   { text-align: left !important; }
+//     .text#{$infix}-right  { text-align: right !important; }
+//     .text#{$infix}-center { text-align: center !important; }
+//   }
+// }
