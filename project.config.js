@@ -3,10 +3,6 @@ const config = {
   build: 'build',
 
   /**
-   * ► добавить "bundle" опцию ложить ли ее в dist
-   */
-
-  /**
    * Development
    */
   development: {
