@@ -40,7 +40,7 @@ const getVendorsArray = () => {
  * JS App scripts
  */
 const scriptsApp = () => {
-  return src(config[mode()].js.app.min ? `${source}/js/app.js` : ['./*', '!./*'], {
+  return src(mode.is('prod') ? `${source}/js/app.js` : ['./*', '!./*'], {
     allowEmpty: true,
   })
     .pipe(gulpif(config[mode()].js.app.min, uglify()))
