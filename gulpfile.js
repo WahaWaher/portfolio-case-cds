@@ -58,7 +58,7 @@ exports['build'] = series(
     rootPagesHTML,
     rootPagesPHP,
     copyRootOther,
-    copyCustom([`${source}/layout/**/*`], [`${build}/layout`]),
+    copyCustom([`${source}/parts/**/*`], [`${build}/parts`]),
     copyCustom([`${source}/pages/**/*`], [`${build}/pages`])
   ),
   watcher,
