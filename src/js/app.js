@@ -21,6 +21,77 @@ $(document).ready(function() {
    */
   lazySizes.init();
 
+  /**
+   * Scroll to block
+   */
+  // Scroll to selector
+  function scrollToSelector(selector) {
+    if (!selector) return false;
+
+    $('html,body')
+      .stop()
+      .animate(
+        {
+          scrollTop: getOffset(selector)
+        },
+        {
+          duration: 1100,
+          easing: 'swing',
+          step: function(now, fx) {
+            var newDest = getOffset(selector);
+
+            if (fx.end !== newDest) fx.end = newDest;
+          },
+          complete: function () {
+            if (history.pushState) {
+              history.pushState(null, null, selector);
+            }
+            else {
+              location.hash = selector;
+            }
+          }
+        }
+      );
+  }
+
+  // Gets current offsetTop
+  function getOffset(selector) {
+    var offset = $(selector).offset();
+
+    return offset ? offset.top : 0;
+  }
+
+  // Disable default anchor scroll
+  if (location.hash) {
+    setTimeout(function() {
+      window.scrollTo(0, 0);
+    }, 0);
+  }
+
+  // Animate anchor scroll when page loaded
+  if (location.hash) {
+    setTimeout(function () {
+      scrollToSelector(location.hash);
+    }, 250);
+  }
+
+  $('a.scroll-to').click(function() {
+    var $this = $(this);
+    var href = $this.attr('href');
+    var parts = href.split('#');
+    var selector = parts[1] ? '#' + parts[1] : '';
+
+    if (!selector) return false;
+
+    // disable animate scroll for links that lead to other pages
+    if (parts[0]) return;
+
+    scrollToSelector(selector);
+
+    return false;
+  });
+  /* Scroll to block: End */
+
   /* Back to top button: Start */
   var navButton = $('#top-button'),
     screenHeight = $(window).height(),
