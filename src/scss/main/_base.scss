@@ -9,10 +9,8 @@ html {
 body {
   min-width: 320px;
   min-height: 500px;
-  font-family: $app-font;
-  font-size: $app-font-size;
+  font: $app-font-weight $app-font-size $app-font;
   line-height: $app-line-height;
-  font-weight: $app-font-weight;
   letter-spacing: $app-letter-spacing;
   color: $black;
   background-color: $white;
@@ -42,6 +40,18 @@ a {
 :focus {
   outline: 0 !important;
   outline-offset: 0 !important;
+}
+
+/**
+ * Other
+ */
+p {
+  margin-top: 0;
+}
+
+b,
+strong {
+  font-weight: 700
 }
 
 /**

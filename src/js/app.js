@@ -1,10 +1,5 @@
 $(document).ready(function() {
   /**
-   * SVG Polyfill
-   */
-  svg4everybody();
-
-  /**
    * Animation on lazyloaded
    */
   $(document)

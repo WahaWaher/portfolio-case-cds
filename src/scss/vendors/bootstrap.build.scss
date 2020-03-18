@@ -46,14 +46,27 @@ $spacers: (
 // Removing from maps:
 // $spacers: map-remove($spacers, 0, 1, 2, 3, 4, 5);
 
-// Grid: full
-// @import 'bootstrap/scss/bootstrap-grid';
-
 // Grid: parts
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 @import "bootstrap/scss/grid";
 @import "bootstrap/scss/utilities/display";
 @import "bootstrap/scss/utilities/flex";
 @import "bootstrap/scss/utilities/spacing";
+
+// Grid: full
+// @import 'bootstrap/scss/bootstrap-grid';
 
 // Utilities: Responsive text alignment
 // @each $breakpoint in map-keys($grid-breakpoints) {

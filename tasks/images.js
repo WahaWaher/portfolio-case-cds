@@ -54,7 +54,7 @@ const genSprite = () => {
  */
 const copyIMG = () => {
   return src([
-    `${source}/img/**/*`,
+    `${source}/img/**/*.{jpg,jpeg,png,gif}`,
     `!${source}/img/favicon/original.*`,
   ]).pipe(dest(`${build}/img/`));
 };

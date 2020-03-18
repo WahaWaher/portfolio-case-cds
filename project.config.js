@@ -18,12 +18,12 @@ const config = {
       // app styles
       app: {
         min: false,
-        maps: false,
+        maps: true,
       },
       // vendor styles
       vendors: {
         min: true,
-        maps: false,
+        maps: true,
         separate: true,
       },
     },
@@ -62,7 +62,7 @@ const config = {
       vendors: {
         min: true,
         maps: false,
-        separate: true,
+        separate: false,
       },
     },
     js: {
@@ -73,7 +73,7 @@ const config = {
       // vendor scripts
       vendors: {
         min: true,
-        separate: true,
+        separate: false,
       },
     },
   },

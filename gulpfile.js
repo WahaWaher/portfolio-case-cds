@@ -48,9 +48,12 @@ exports['dev'] = series(
  */
 exports['build'] = series(
   cleanBuild,
-  parallel(
-    parallel(scriptsApp, scriptsVendors, scriptsVendorsSep),
-    parallel(stylesApp, stylesVendors),
+  parallel([
+    stylesApp,
+    stylesVendors,
+    scriptsApp,
+    scriptsVendors,
+    config[mode()].js.vendors.separate ? scriptsVendorsSep : false,
     copyFonts,
     copyIMG,
     copySVG,
@@ -60,7 +63,7 @@ exports['build'] = series(
     copyRootOther,
     copyCustom([`${source}/parts/**/*`], [`${build}/parts`]),
     copyCustom([`${source}/pages/**/*`], [`${build}/pages`])
-  ),
+  ].filter(Boolean)),
   watcher,
 );
 

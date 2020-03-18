@@ -6,8 +6,14 @@ const { mode, config } = require('../project.config');
 const { source, build } = config;
 
 const commonReplacement = {
-  css: ['css/vendors~app.min.css', 'css/app.min.css'],
-  js: ['js/vendors~app.min.js', 'js/app.min.js'],
+  css: [
+    `css/vendors~app${config[mode()].css.vendors.min ? '.min' : ''}.css`,
+    `css/app${config[mode()].css.app.min ? '.min' : ''}.css`
+  ],
+  js: [
+    `js/vendors~app${config[mode()].js.vendors.min ? '.min' : ''}.js`,
+    `js/app${config[mode()].js.app.min ? '.min' : ''}.js`
+  ],
 };
 
 /**
