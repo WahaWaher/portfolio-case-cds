@@ -1,0 +1,14 @@
+@import '../settings';
+
+$hamburger-padding-x : 5px;
+$hamburger-padding-y : 5px;
+$hamburger-layer-width : 28px;
+$hamburger-layer-height : 2px;
+$hamburger-layer-spacing : 5px;
+$hamburger-layer-color : #222;
+$hamburger-layer-border-radius : 0;
+$hamburger-hover-opacity : .75;
+$hamburger-types : (slider);
+
+// Import Hamburgers lib (scss/vendors.scss)
+@import 'hamburgers/_sass/hamburgers/hamburgers';

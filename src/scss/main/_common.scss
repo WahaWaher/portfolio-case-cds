@@ -33,9 +33,11 @@
   text-align: center;
   line-height: 1;
   text-decoration: none;
+  border: none;
   user-select: none;
   touch-action: manipulation;
   position: relative;
+  transition: all $trs;
   &:hover {}
   &:active {}
   // Colors
@@ -51,9 +53,9 @@
 }
 
 /**
- * Block: ration-container
+ * Block: ratio-box
  */
-.ratio-container {
+.ratio-box {
   position: relative;
   &:after {
     content: '';

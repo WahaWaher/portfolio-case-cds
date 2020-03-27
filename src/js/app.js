@@ -42,11 +42,10 @@ $(document).ready(function() {
 
             if (fx.end !== newDest) fx.end = newDest;
           },
-          complete: function () {
+          complete: function() {
             if (history.pushState) {
               history.pushState(null, null, selector);
-            }
-            else {
+            } else {
               location.hash = selector;
             }
           }
@@ -61,16 +60,14 @@ $(document).ready(function() {
     return offset ? offset.top : 0;
   }
 
-  // Disable default anchor scroll
   if (location.hash) {
+    // Disable default anchor scroll
     setTimeout(function() {
       window.scrollTo(0, 0);
     }, 0);
-  }
 
-  // Animate anchor scroll when page loaded
-  if (location.hash) {
-    setTimeout(function () {
+    // Animate anchor scroll when page loaded
+    setTimeout(function() {
       scrollToSelector(location.hash);
     }, 250);
   }
