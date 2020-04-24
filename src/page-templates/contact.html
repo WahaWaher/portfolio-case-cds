@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('../parts/head.html')
+</head>
+<body>
+  <div class="app app_header_fixed">
+    <!-- AppHeader : Start -->
+    @@include('../parts/header.html')
+    <!-- AppHeader : End -->
+
+    <!-- AppPage : Start -->
+    <main class="app-page">
+      <!-- Section : Start -->
+      <section class="sct">
+        <div class="contacts-grid">
+
+          <div class="contacts-grid__content-main order-lg-2">
+            <div class="contacts-grid__info">
+
+                <h1 class="title-1">Contact us</h1>
+                <address class="row font-style-normal">
+                  <div class="col-sm-6">
+
+                    <div class="mb-4">
+                      <div class="title-4 font-primary font-weight-medium my-2">Phone:</div>
+                      <span class="icon-box contacts-grid__icon-box text-primary">
+                        <i class="aif-phone-ringing icon-box__icon text-accent"></i>
+                        <span class="icon-box__text">+99 99 999 99 99</span>
+                      </span>
+                    </div>
+
+                    <div class="mb-4">
+                      <div class="title-4 font-primary font-weight-medium my-2">E-mail:</div>
+                      <span class="icon-box contacts-grid__icon-box text-primary">
+                        <i class="aif-mail icon-box__icon text-accent"></i>
+                        <span class="icon-box__text">examp@gmail.com</span>
+                      </span>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-6">
+
+                    <div class="mb-4">
+                      <div class="title-4 font-primary font-weight-medium my-2">Address</div>
+                      <span class="icon-box contacts-grid__icon-box text-primary">
+                        <i class="aif-pin icon-box__icon text-accent"></i>
+                        <span class="icon-box__text">
+                          Churerstrasse 999 <br>
+                          9999 Pfäffikon SZ <br>
+                          Switzerland
+                        </span>
+                      </span>
+                    </div>
+                    
+                  </div>
+                </address>
+
+            </div>
+            <div class="contacts-grid__map">
+
+            <!-- GoogleMap -->
+              <div class="g-map lazyload w-100 h-100" data-gmap='{
+                "center": {
+                  "lat": 52.519378662109375,
+                  "lng": 13.409503936767578
+                },
+                "markers": [
+                  {
+                    "position": {
+                      "lat": 52.519378662109375,
+                      "lng": 13.409503936767578
+                    }
+                  }
+                ]
+              }' style="min-height: 475px;"></div>
+
+            </div>
+          </div>
+
+          <div class="contacts-grid__content-sub order-lg-1">
+              
+            <!-- Background -->
+              <div class="rellax-box z-n1">
+                <img class="contacts-grid__bg img-cover lazyload" data-rellax-speed="0" data-rellax-desktop-speed="-8" data-src="img/bg-corridor.jpg" src="./svg/lazy.svg" data-sizes="auto" data-srcset="
+                  img/bg-corridor.jpg 1920w,
+                  img/bg-corridor.jpg 1280w,
+                  img/bg-corridor_1024.jpg 1024w,
+                  img/bg-corridor_768.jpg 768w
+                " alt="img">
+              </div>
+              
+              <!-- Form -->
+              <div class="contacts-grid__form">
+                <div class="title-3 font-primary mb-4 pb-2">Write to us</div>
+                <form>
+                  <div class="form-group mb-2">
+                    <input class="form-input form-input_sm form-input_wide" type="text" placeholder="Your name">
+                  </div>
+                  <div class="form-group mb-2">
+                    <input class="form-input form-input_sm form-input_wide" type="tel" placeholder="Phone number*">
+                  </div>
+                  <div class="form-group mb-2">
+                    <input class="form-input form-input_sm form-input_wide" type="email" placeholder="E-mail address">
+                  </div>
+                  <div class="form-group mb-2">
+                    <textarea class="form-input form-input_sm form-input_wide" rows="6" placeholder="Tell us more"></textarea>
+                  </div>
+                  <button class="btn btn_accent btn_wide btn_high" type="submit" onclick="return false">Send</button>
+                  <p class="mt-4 mb-0" style="font-size: 13px;">By filling in the form you agree <br>to <a href="javascript:void(0)" class="link" target="_blank"><b>the privacy policy</b></a></p>
+                </form>
+              </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- Section : End -->
+    </main>
+    <!-- AppPage : End -->
+
+    <!-- AppFooter : Start -->
+    @@include('../parts/footer.html')
+    <!-- AppFooter : End -->
+
+    <!-- Drawers : Start -->
+    @@include('../parts/drawers.html')
+    <!-- Drawers : End -->
+
+    <!-- Modals : Start -->
+    @@include('../parts/modals.html')
+    <!-- Modals : End -->
+  </div>
+
+  @@include('../parts/scripts.html')
+</body>
+</html>

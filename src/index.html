@@ -2,77 +2,484 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <title>Gulp Common Template</title>
+<title>CDS — Portfolio case</title>
+<meta name="description" content="Portfolio case">
+<meta name="keywords" content="portfolio, case">
 
-  <meta name="description" content="description">
-  <meta name="keywords" content="key, words">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
-  <!-- build:css -->
-  <link rel="stylesheet" href="css/vendors~app.min.css">
-  <link rel="stylesheet" href="css/app.css">
-  <!-- endbuild -->
+<!-- build:css -->
+<link rel="stylesheet" href="css/vendors~app.min.css">
+<link rel="stylesheet" href="css/app.css">
+<!-- endbuild -->
 </head>
 <body>
-
-  <div class="container">
-    <h1>Gulp Common Template</h1>
-    <p>Lorem ipsum dolor sit <strong>amet consectetur adipisicing elit</strong>. Nobis officia, quaerat in <em>reiciendis aperiam quis totam</em> incidunt tempore iste omnis dolorem? Dolore quasi harum excepturi aspernatur molestias non porro praesentium!</p>
-  </div>
-
-  <div class="container">
-    <h1>Lorem ipsum dolor sit amet.</h1>
-    <h2>Lorem ipsum dolor sit amet.</h2>
-    <h3>Lorem ipsum dolor sit amet.</h3>
-    <h4>Lorem ipsum dolor sit amet.</h4>
-    <h5>Lorem ipsum dolor sit amet.</h5>
-    <h6>Lorem ipsum dolor sit amet.</h6>
-  </div>
-
-  <div class="container">
+  <div class="app app_header_fixed">
+    <!-- AppHeader : Start -->
+    <header class="app-header shadow-main d-flex align-items-center">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-4">
-        <svg class="svg-icon">
-          <use xlink:href="svg/app-sprite.svg#camera"></use>
-        </svg>
-        <p><strong>1.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis corporis mollitia quo distinctio sequi ipsa quisquam impedit eveniet sapiente nam cupiditate tempora sed, doloribus natus tenetur porro earum debitis voluptatum.</p>
+      <!-- Left -->
+      <div class="col-8 col-sm-6">
+        <div class="row h-100 align-items-center">
+          <div class="col-auto flex-grow-1">
+
+            <div class="logo-main app-header__logo-main">
+              <img class="logo-main__img" src="svg/logo.svg" alt="logo">
+            </div>
+
+          </div>
+          <div class="col-auto flex-grow-1 d-none d-lg-block">
+
+            <nav class="menu-main menu-main_x app-header__menu-main text-right mr-4">
+              <ul class="menu-main__list list-empty">
+                <li><a href="division.html">Operating Divisions</a></li>
+                <li><a href="investment.html">Investment</a></li>
+              </ul> 
+            </nav>
+
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <svg class="svg-icon">
-          <use xlink:href="svg/app-sprite.svg#phone"></use>
-        </svg>
-        <p><strong>2.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis corporis mollitia quo distinctio sequi ipsa quisquam impedit eveniet sapiente nam cupiditate tempora sed, doloribus natus tenetur porro earum debitis voluptatum.</p>
+      <!-- Right -->
+      <div class="col-4 col-sm-6">
+        <div class="row h-100 align-items-center">
+          <div class="col-auto d-none d-lg-block">
+
+            <nav class="menu-main menu-main_x app-header__menu-main ml-4">
+              <ul class="menu-main__list list-empty">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul> 
+            </nav>
+
+          </div>
+          <div class="col-auto flex-grow-1 d-none d-lg-block text-center">
+
+            <a class="contact-box-min hvr-icon-push font-weight-medium" href="tel:99999999999" title="Call">
+              <i class="aif-phone-bold hvr-icon mr-1"></i>
+              +99 99 999 99 99
+            </a>
+
+          </div>
+          <div class="col-auto d-none d-lg-block">
+
+            <ul class="menu-lang list-empty menu-lang_sm">
+              <li class="is-active"><a href="javascript:void(0)">en</a></li>
+              <li><a href="javascript:void(0)">de</a></li>
+            </ul>
+
+          </div>
+          <div class="col-12 d-lg-none text-right">
+
+            <button class="btn-drawer-switch" data-drawerToggle="mobile-menu">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" opacity="0.7">
+                <path d="M22.4616 4.30776H1.53848C0.688594 4.30776 0 3.61916 0 2.76932C0 1.91948 0.688594 1.23083 1.53848 1.23083H22.4616C23.3114 1.23083 24 1.91943 24 2.76932C24 3.61921 23.3114 4.30776 22.4616 4.30776Z" fill="#4f4f4f"/>
+                <path d="M13.8462 13.5384H1.53848C0.688594 13.5384 0 12.8498 0 11.9999C0 11.1501 0.688594 10.4614 1.53848 10.4614H13.8462C14.696 10.4614 15.3847 11.15 15.3847 11.9999C15.3847 12.8498 14.696 13.5384 13.8462 13.5384Z" fill="#4f4f4f"/>
+                <path d="M22.4615 13.5383H19.9999C19.1501 13.5383 18.4614 12.8497 18.4614 11.9998C18.4614 11.1499 19.15 10.4613 19.9999 10.4613H22.4615C23.3113 10.4613 23.9999 11.1499 23.9999 11.9998C23.9999 12.8497 23.3113 13.5383 22.4615 13.5383Z" fill="#b88530"/>
+                <path d="M22.4616 22.7694H1.53848C0.688594 22.7694 0 22.0807 0 21.2309C0 20.3811 0.688594 19.6924 1.53848 19.6924H22.4616C23.3114 19.6924 24 20.381 24 21.2309C24 22.0807 23.3114 22.7694 22.4616 22.7694Z" fill="#4f4f4f"/>
+              </svg>
+            </button>
+
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <svg class="svg-icon">
-          <use xlink:href="svg/app-sprite.svg#quotes"></use>
-        </svg>
-        <p><strong>3.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis corporis mollitia quo distinctio sequi ipsa quisquam impedit eveniet sapiente nam cupiditate tempora sed, doloribus natus tenetur porro earum debitis voluptatum.</p>
+    </div>
+    <!-- HomeButton -->
+    <a class="btn-home app-header__btn-home d-none d-lg-block" href="index.html">
+      <i class="aif-home-bold btn-home__icon"></i>
+    </a>
+  </div>
+</header>
+    <!-- AppHeader : End -->
+
+    <!-- AppPage : Start -->
+    <main class="app-page">
+      <!-- Section : MainScreen : Start -->
+      <section class="sct bg-placehoder d-flex flex-column">
+        <div class="rellax-box z-0">
+          <img class="sct__bg img-cover lazyload" data-rellax-speed="-8" data-src="img/bg-buildings_1280.jpg" src="./svg/lazy.svg" data-sizes="auto" data-srcset="
+            img/bg-buildings.jpg 1920w,
+            img/bg-buildings_1280.jpg 1280w,
+            img/bg-buildings_1024.jpg 1024w,
+            img/bg-buildings_768.jpg 768w
+          " alt="img">
+        </div>
+        <div class="sct__area d-flex flex-grow-1 z-0">
+          <div class="container d-flex flex-grow-1">
+            <div class="row flex-grow-1">
+              <div class="col-md-10 col-lg-6 d-flex">
+
+                <div class="offer-main d-flex flex-column flex-grow-1 wing wing_left wing_sm_both">
+                  <div class="offer-main__inner offer-main__inner_indents-right">
+
+                    <h1 class="title-motley mb-5 mb-lg-6">
+                      <span class="title-motley__top">Invest</span>
+                      <span class="title-motley__middle">support</span>
+                      <span class="title-motley__bottom">create</span>
+                    </h1>
+                    <h2 class="offer-main__title mb-3">CDS Management GmbH</h2>
+                    <div class="offer-main__content">
+                      <p>Privately owned Switzerland based enterprise consisting of two divisions</p>
+                      <p>One division is operational and offers services for SMEs by providing people and culture solutions as well as services in the creative sector, whereas the other division invests in Real Estate and outstanding small and mid-sized companies.</p>
+                      <div class="mt-5 mt-lg-6">
+                        <a class="link-more hvr-icon-wobble-horizontal" href="about.html">About services</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section : MainScreen : End -->
+
+      <!-- Section : Divisions : Start -->
+      <section class="sct sct_gaps-y_def">
+        <div class="container">
+          <h2 class="title-2">Operating divisions</h2>
+
+          <div class="row mt-5">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <!-- Card : Start -->
+              <div class="card h-100 d-flex flex-column">
+                <!-- Header -->
+                <header class="card__header">
+                  <div class="card__img-box">
+                    <img class="card__img img-cover lazyload" data-src="img/bg-charts_1024.jpg" src="svg/lazy.svg" data-sizes="auto" data-srcset="
+                      img/bg-charts_1024.jpg 1024w,
+                      img/bg-charts_768.jpg 768w
+                    " alt="img">
+                  </div>
+                  <div class="card__logo-box">
+                    <img class="card__logo-img lazyload" data-src="svg/logo-consulting.svg" src="svg/lazy.svg" alt="img">
+                  </div>
+                </header>
+                <div class="card__content p-4 p-sm-5">
+                  <!-- Title -->
+                  <h3 class="card__title title-3">Support companies in their growth</h3>
+                  <!-- Content -->
+                  <div class="card__descr">
+                    <p>Our HR-boutique provides tailored support in specialized recruitment and HR business solutions. The recruitment of Russian-speaking employees and virtual assistants is our unique competence.</p>
+                  </div>
+                  <!-- Icons -->
+                  <div class="card__icons">
+                    <div class="row">
+                      <div class="col-12 col-xl-auto">
+                        <span class="icon-box text-primary font-weight-medium">
+                          <i class="aif-arrow-double-down icon-box__icon text-accent"></i>
+                          <span class="icon-box__text">Special recruitment</span>
+                        </span>
+                      </div>
+                      <div class="col-12 col-xl-auto">
+                        <span class="icon-box text-primary font-weight-medium">
+                          <i class="aif-arrow-double-down icon-box__icon text-accent"></i>
+                          <span class="icon-box__text">HR-business solutions</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ReadMore -->
+                  <div class="card__meta mb-2 mb-sm-0">
+                    <a class="link-simple font-weight-medium" href="division.html">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card : End -->
+            </div>
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <!-- Card : Start -->
+              <div class="card h-100 d-flex flex-column">
+                <!-- Header -->
+                <header class="card__header">
+                  <div class="card__img-box">
+                    <img class="card__img img-cover lazyload" data-src="img/bg-smartphone_1024.jpg" src="svg/lazy.svg" data-sizes="auto" data-srcset="
+                      img/bg-smartphone_1024.jpg 1024w,
+                      img/bg-smartphone_768.jpg 768w
+                    " alt="img">
+                  </div>
+                  <div class="card__logo-box">
+                    <img class="card__logo-img lazyload" data-src="svg/logo-media.svg" src="svg/lazy.svg" alt="img">
+                  </div>
+                </header>
+                <div class="card__content p-4 p-sm-5">
+                  <!-- Title -->
+                  <h3 class="card__title title-3">Content made visible</h3>
+                  <!-- Content -->
+                  <div class="card__descr">
+                    <p>We make your media appearance perfect - no matter whether online or print. Together with an international network of specialists, we offer professional, uncompromising solutions for graphic work.</p>
+                  </div>
+                  <!-- Icons -->
+                  <div class="card__icons">
+                    <div class="row">
+                      <div class="col-12 col-xl-auto">
+                        <span class="icon-box text-primary font-weight-medium">
+                          <i class="aif-arrow-double-down icon-box__icon text-accent"></i>
+                          <span class="icon-box__text">Create content</span>
+                        </span>
+                      </div>
+                      <div class="col-12 col-xl-auto">
+                        <span class="icon-box text-primary font-weight-medium">
+                          <i class="aif-arrow-double-down icon-box__icon text-accent"></i>
+                          <span class="icon-box__text">Marketing content</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ReadMore -->
+                  <div class="card__meta mb-2 mb-sm-0">
+                    <a class="link-simple font-weight-medium" href="division.html">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card : End -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section : Divisions : End -->
+
+      <!-- Section : Investment : Start -->
+      <section class="sct sct_gaps-y_def bg-grey-light">
+        <div class="container">
+          <h2 class="title-2">Investment</h2>
+
+          <div class="row mt-5">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <!-- Card : Start -->
+              <div class="card bg-white">
+                <!-- Header -->
+                <header class="card__header">
+                  <div class="card__img-box">
+                    <img class="card__img img-cover lazyload" data-src="img/bg-table_1024.jpg" src="svg/lazy.svg" data-sizes="auto" data-srcset="
+                      img/bg-table_1024.jpg 1024w,
+                      img/bg-table_768.jpg 768w
+                    " alt="img">
+                  </div>
+                  <div class="card__logo-box">
+                    <img class="card__logo-img lazyload" data-src="svg/logo-real-estate.svg" src="svg/lazy.svg" alt="img">
+                  </div>
+                </header>
+                <div class="card__content p-4 p-sm-5">
+                  <!-- Title -->
+                  <h3 class="card__title title-3">Homes and properties</h3>
+                  <!-- Content -->
+                  <div class="card__descr">
+                    <p>Our strength lies in connecting the right real estate to our strategies for long-term sustainable benefit. It is important to us to understand the local markets. Therefore, we only invest in regions to which we have a connection.</p>
+                  </div>
+                  <!-- Icons -->
+                  <div class="card__icons">
+                    <div class="row">
+                      <div class="col-12 col-xl-auto">
+                        <span class="icon-box text-primary font-weight-medium">
+                          <i class="aif-arrow-double-down icon-box__icon text-accent"></i>
+                          <span class="icon-box__text">Europe and Russia</span>
+                        </span>
+                      </div>
+                      <div class="col-12 col-xl-auto">
+                        <span class="icon-box text-primary font-weight-medium">
+                          <i class="aif-arrow-double-down icon-box__icon text-accent"></i>
+                          <span class="icon-box__text">Real Estate Investment</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ReadMore -->
+                  <div class="card__meta mb-2 mb-sm-0">
+                    <a class="link-simple font-weight-medium" href="investment.html">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card : End -->
+            </div>
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <!-- Card : Start -->
+              <div class="card bg-white">
+                <!-- Header -->
+                <header class="card__header">
+                  <div class="card__img-box">
+                    <img class="card__img img-cover lazyload" data-src="img/bg-hands_1024.jpg" src="svg/lazy.svg" data-sizes="auto" data-srcset="
+                      img/bg-hands_1024.jpg 1024w,
+                      img/bg-hands_768.jpg 768w
+                    " alt="img">
+                  </div>
+                  <div class="card__logo-box">
+                    <img class="card__logo-img lazyload" data-src="svg/logo-investment.svg" src="svg/lazy.svg" alt="img">
+                  </div>
+                </header>
+                <div class="card__content p-4 p-sm-5">
+                  <!-- Title -->
+                  <h3 class="card__title title-3">Private investment</h3>
+                  <!-- Content -->
+                  <div class="card__descr">
+                    <p>We finance growth and promote innovation through the provision of equity. Our investment focus is on Western European companies that offer B2B solutions in the sectors of software and new media.</p>
+                  </div>
+                  <!-- Icons -->
+                  <div class="card__icons">
+                    <div class="row">
+                      <div class="col-12 col-xl-auto">
+                        <span class="icon-box text-primary font-weight-medium">
+                          <i class="aif-arrow-double-down icon-box__icon text-accent"></i>
+                          <span class="icon-box__text">Private Equity</span>
+                        </span>
+                      </div>
+                      <div class="col-12 col-xl-auto">
+                        <span class="icon-box text-primary font-weight-medium">
+                          <i class="aif-arrow-double-down icon-box__icon text-accent"></i>
+                          <span class="icon-box__text">Venture Capital</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ReadMore -->
+                  <div class="card__meta mb-2 mb-sm-0">
+                    <a class="link-simple font-weight-medium" href="investment.html">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card : End -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section : Investment : End -->
+    </main>
+    <!-- AppPage : End -->
+
+    <!-- AppFooter : Start -->
+    <footer class="app-footer">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-auto col-sm-6 col-md-3 col-lg-2 mb-5 mb-sm-0 flex-grow-1">
+
+        <div class="logo-main app-footer__logo-main">
+          <img class="logo-main__img" src="svg/logo.svg" alt="logo">
+        </div>
+
+      </div>
+      <div class="col-md-5 col-lg-4 d-none d-md-block">
+
+        <nav class="menu-main menu-main_y app-footer__menu-main ml-md-4">
+          <ul class="menu-main__list list-empty">
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="division.html">Operating Divisions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="investment.html">Investment</a></li>
+          </ul> 
+        </nav>
+
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-6">
+        <div class="row my-n2 my-lg-0 text-left text-sm-right">
+          <div class="col-lg-6 my-2 my-lg-0">
+
+            <a class="contact-box-min d-block font-weight-medium" href="tel:99999999999" title="Call">
+              +99 99 999 99 99
+            </a>
+
+            <a class="contact-box-min d-block font-weight-medium" href="mailto:examp@gmail.com" title="Send">
+              examp@gmail.com
+            </a>
+
+          </div>
+          <div class="col-lg-6 my-2 my-lg-0">
+
+            <div class="copyright">
+              © All rights reserved <br>
+              CDS Management GmbH&nbsp;|&nbsp;2020
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
+</footer>
+    <!-- AppFooter : End -->
 
-  <div class="container">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ullam. Nihil necessitatibus nulla recusandae, eligendi placeat omnis nesciunt molestias accusantium illum praesentium laborum, harum officiis. Ea ullam officiis cum eum provident nemo aut quo et ipsam aperiam natus laboriosam iste necessitatibus maxime nihil magnam, architecto nulla temporibus excepturi illo dicta eligendi laudantium suscipit recusandae? Vero possimus nisi enim. Officiis ullam nisi quos illum beatae dolor a modi aliquid, dignissimos doloremque ut harum sit. Reprehenderit quasi quia doloremque quibusdam rerum eligendi id fugit tempora ab voluptas delectus magnam debitis esse consequuntur illum ad, possimus eaque, ducimus error officia! Modi quod dolores laboriosam odit sint iusto sequi eveniet blanditiis aperiam veniam animi quis maxime ipsa ducimus ullam adipisci exercitationem a aliquid, eligendi sit voluptates itaque. Quidem, tempora officiis, accusamus recusandae quibusdam dicta minima repellendus aliquam ipsa optio nulla fuga, nihil maxime. Fugit, minus. Odio enim aut illum vero explicabo quod impedit. Repellendus blanditiis eius alias error! At quibusdam dignissimos ipsum in iure libero, pariatur sed repudiandae obcaecati ad maiores dolorum necessitatibus beatae aperiam modi et quidem excepturi voluptas eos dicta odio illo. Qui adipisci id nesciunt asperiores ducimus libero placeat dolores et. Qui laudantium ut, explicabo asperiores vero eveniet? Quod soluta architecto laborum assumenda quasi ipsa, quidem autem. Voluptates illum vero quia dicta velit eligendi obcaecati officia aliquam, qui alias consequatur sint, numquam hic doloribus! Quo neque excepturi explicabo natus ab, earum voluptatibus id nisi blanditiis quos nihil sed sit molestiae perferendis dolor veritatis necessitatibus nostrum quia tempore ipsa rerum sunt est? Expedita, velit! Sint, itaque voluptas? Minima natus, necessitatibus asperiores nostrum eius consequatur nesciunt, enim pariatur excepturi voluptatibus mollitia aliquid explicabo accusantium perspiciatis, deleniti nulla aperiam tenetur ratione vero? Nobis consequuntur magni et beatae reprehenderit amet cumque eaque sed, magnam architecto quam vitae laborum aliquam impedit rerum modi exercitationem ex consequatur ullam asperiores similique, error id nesciunt? Quas ratione suscipit possimus quibusdam vero fugiat totam quia corporis magni. Mollitia consequatur laborum dolores illum necessitatibus recusandae. Eius corrupti labore earum voluptates quae porro ut nisi assumenda suscipit. Ratione at expedita distinctio. Fugiat quis voluptates ab quo minima, exercitationem quod omnis veniam voluptatibus odio repellendus enim commodi reprehenderit porro quam delectus blanditiis quisquam amet et optio illum rerum cumque vero totam! A ad laudantium saepe facilis sapiente quae consectetur eaque et numquam itaque sed officiis quia facere optio delectus deleniti temporibus nihil aperiam enim at quam veniam aut, ut magnam. Debitis labore obcaecati sint voluptatem eaque eos quibusdam quaerat similique veniam? Nam asperiores labore laudantium, ab sequi, voluptatibus vel illo adipisci cupiditate, tempore aperiam! Reprehenderit, corporis quam? Natus atque, deserunt distinctio inventore omnis quae doloribus voluptatibus molestiae a nam eius ab voluptates enim consectetur, excepturi iste ullam expedita sunt unde ea commodi, ipsum quibusdam veritatis. Numquam iure, animi deleniti minima, autem molestiae natus vero laboriosam velit nobis nostrum illo sed, consectetur ea repellendus odit voluptatibus nulla aliquam. Dolore quos fugiat eos quibusdam perferendis corrupti soluta quod? Accusamus quae alias maxime incidunt illo, repellat corrupti nobis quia magni officiis laborum id obcaecati optio atque omnis voluptates a temporibus laudantium quis aperiam porro consequatur maiores? Dolores neque laudantium similique fugit quo, maxime laboriosam quaerat in esse id ratione repellat consectetur tempore sunt qui libero ipsa iure impedit placeat tempora quos tenetur. Repellat animi doloremque sapiente omnis! Quod dolore asperiores animi quos! Pariatur possimus debitis eveniet eaque reprehenderit officia fugiat nam officiis et labore quod explicabo qui eum veniam, ex doloribus eos nesciunt itaque id reiciendis minima maxime iusto. Eveniet totam ipsam dignissimos provident enim alias eos explicabo fugiat quos, delectus iste suscipit recusandae. Quasi suscipit at eius voluptate autem nam fugit error unde, iste facilis inventore nulla. Atque minima sunt excepturi, adipisci, quos tempora necessitatibus accusamus consequuntur tempore doloribus quo sit. Commodi sint quia optio ullam rerum eaque dicta blanditiis. Dolor mollitia eius odit dolorem! Molestias harum blanditiis rem illo accusamus placeat dignissimos illum, nesciunt ipsum omnis fugiat, temporibus minima, quae obcaecati officia dolorum velit. Deleniti voluptate dolore minima esse aspernatur eius non quisquam vero quam optio, animi hic. Id mollitia inventore doloribus a esse nemo hic vitae aliquid error at! Magnam mollitia quibusdam a exercitationem explicabo provident nulla quos debitis cum. Natus beatae ab, nostrum eligendi, reprehenderit eveniet incidunt assumenda facilis vero in ut? Qui unde veritatis porro ipsa itaque. Illum fugit voluptates excepturi molestiae voluptatum labore repellendus reiciendis laboriosam, enim ipsa, debitis voluptatibus quam nesciunt explicabo sequi ut inventore. Ullam quidem pariatur tenetur tempore natus incidunt impedit itaque, dolor, quas delectus ipsa in voluptates ratione minima nesciunt voluptatem quisquam explicabo recusandae perspiciatis expedita rem praesentium. Provident reiciendis sint, itaque distinctio ea atque, incidunt mollitia quisquam architecto tempore doloremque quaerat earum exercitationem numquam temporibus recusandae corrupti pariatur dolorem ipsum fugit eius? Illum veritatis, sit nisi ex officia esse ratione voluptas error eveniet est odio iste! Placeat, iusto quos vel fugiat, dolore provident sunt distinctio facilis corporis ipsa ut praesentium? Unde officiis quaerat necessitatibus nihil corrupti quidem soluta blanditiis quibusdam quisquam laborum id nemo animi magni nobis deserunt mollitia aliquam optio eos explicabo, autem fugit incidunt. Soluta aliquid, quis mollitia labore hic deleniti rem accusamus quidem inventore, numquam odio saepe. Eligendi harum quisquam, sed libero dicta explicabo hic? A, quaerat. Eum id eveniet reiciendis voluptatem. Ullam fugit veniam vitae, perferendis eaque minima rerum, earum nostrum itaque soluta maxime laudantium modi facere. Eius inventore, eveniet doloremque quis dignissimos nihil cumque natus aliquid, esse ab consequatur aperiam. Voluptatem, placeat! Eum voluptatum ipsum error quod, corporis quis vero laboriosam, quia, corrupti qui culpa deleniti asperiores architecto odio tenetur possimus eveniet. Dignissimos, ab nostrum repellat aliquam reprehenderit eos labore possimus pariatur dicta rerum, dolore deleniti ducimus eligendi! Quod aut laborum eos ipsam, nam nemo, consectetur nulla atque aspernatur adipisci explicabo quae omnis, blanditiis accusamus amet error! Veritatis aut necessitatibus modi doloribus dignissimos autem fugiat qui similique. Natus autem, eos fugiat earum quos placeat reiciendis consectetur nemo quam neque id labore culpa maxime soluta esse eum ipsa voluptatibus corporis numquam hic, impedit ratione, itaque officiis dolore? Inventore eum expedita culpa ullam dicta architecto officiis esse? Cum vero doloribus culpa ipsam?</p>
+    <!-- Drawers : Start -->
+    <div class="drawer drawer_main drawer_right text-right d-lg-none" data-drawer="mobile-menu">
+  <!-- Logo -->
+  <div class="logo-main drawer__logo-main mb-6">
+    <img class="logo-main__img" src="svg/logo.svg" alt="logo">
+  </div>
+  <!-- Switch -->
+  <button class="btn-drawer-switch" data-drawerToggle="mobile-menu">
+    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" opacity="0.7">
+      <path d="M22.4616 4.30776H1.53848C0.688594 4.30776 0 3.61916 0 2.76932C0 1.91948 0.688594 1.23083 1.53848 1.23083H22.4616C23.3114 1.23083 24 1.91943 24 2.76932C24 3.61921 23.3114 4.30776 22.4616 4.30776Z" fill="#4f4f4f"/>
+      <path d="M13.8462 13.5384H1.53848C0.688594 13.5384 0 12.8498 0 11.9999C0 11.1501 0.688594 10.4614 1.53848 10.4614H13.8462C14.696 10.4614 15.3847 11.15 15.3847 11.9999C15.3847 12.8498 14.696 13.5384 13.8462 13.5384Z" fill="#4f4f4f"/>
+      <path d="M22.4615 13.5383H19.9999C19.1501 13.5383 18.4614 12.8497 18.4614 11.9998C18.4614 11.1499 19.15 10.4613 19.9999 10.4613H22.4615C23.3113 10.4613 23.9999 11.1499 23.9999 11.9998C23.9999 12.8497 23.3113 13.5383 22.4615 13.5383Z" fill="#b88530"/>
+      <path d="M22.4616 22.7694H1.53848C0.688594 22.7694 0 22.0807 0 21.2309C0 20.3811 0.688594 19.6924 1.53848 19.6924H22.4616C23.3114 19.6924 24 20.381 24 21.2309C24 22.0807 23.3114 22.7694 22.4616 22.7694Z" fill="#4f4f4f"/>
+    </svg>
+  </button>
+  <!-- MenuMain -->
+  <nav class="menu-main menu-main_y menu-main_lg mb-6">
+    <ul class="menu-main__list list-empty">
+      <li><a href="index.html">Home</a></li>
+      <li class="current-menu-item"><a href="about.html">About Us</a></li>
+      <li><a href="division.html">Operating Divisions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="investment.html">Investment</a></li>
+    </ul> 
+  </nav>
+  <!-- Actions -->
+  <div class="mb-6">
+    <div class="mb-1">
+      <a class="contact-box-min font-weight-medium hvr-icon-push" href="tel:+99999999999" title="Call">
+        <i class="aif-phone-bold hvr-icon mr-1"></i>
+        +99 99 999 99 99
+      </a>
+    </div>
+    <div class="mb-1">
+      <a class="link-more" href="#popup-write-to-us" data-src="#popup-write-to-us" data-fancybox>Contact us</a>
+    </div>
+  </div>
+  
+  <!-- MenuLang -->
+  <ul class="menu-lang menu-lang_lg list-empty">
+    <li class="is-active"><a href="javascript:void(0)">en</a></li>
+    <li><a href="javascript:void(0)">de</a></li>
+  </ul>
+</div>
+    <!-- Drawers : End -->
+
+    <!-- Modals : Start -->
+    <div id="popup-write-to-us" class="app-popup app-popup_theme_default">
+  <div class="title-3 font-primary mb-4 pb-2">Write to us</div>
+  <form>
+    <div class="form-group mb-2">
+      <input class="form-input form-input_sm form-input_wide" type="text" placeholder="Your name">
+    </div>
+    <div class="form-group mb-2">
+      <input class="form-input form-input_sm form-input_wide" type="tel" placeholder="Phone number*">
+    </div>
+    <div class="form-group mb-2">
+      <input class="form-input form-input_sm form-input_wide" type="email" placeholder="E-mail address">
+    </div>
+    <div class="form-group mb-2">
+      <textarea class="form-input form-input_sm form-input_wide" rows="6" placeholder="Tell us more"></textarea>
+    </div>
+    <button class="btn btn_accent btn_wide btn_high" type="submit" onclick="return false">Send</button>
+    <p class="mt-4 mb-0" style="font-size: 13px;">By filling in the form you agree <br>to <a href="javascript:void(0)" class="link" target="_blank"><b>the privacy policy</b></a></p>
+  </form>
+</div>
+    <!-- Modals : End -->
   </div>
 
-  <img class="lazyload my-5" data-src="https://ventas.com.ua/blog/wp-content/uploads/2017/06/gulp-1.jpg" src="svg/lazy.svg" alt="img"
-    style="width: 100%; max-width: 800px; margin: 0 auto; display: block;"
-  >
-
-  <!-- <div id="top-button"></div> -->
-
   <script>window.lazySizesConfig={init:!1}</script>
-  <!-- build:js -->
-  <script src="js/vendors~app.min.js"></script>
-  <script src="js/app.js"></script>
-  <!-- endbuild -->
+<!-- build:js -->
+<script src="js/vendors~app.min.js"></script>
+<script src="js/app.js"></script>
+<!-- endbuild -->
 </body>
-
 </html>

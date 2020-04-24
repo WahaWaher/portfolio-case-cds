@@ -1,0 +1,154 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?aq57pe') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?aq57pe') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?aq57pe##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="aif-"], [class*=" aif-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.aif-arrow-double-bold-left {
+  &:before {
+    content: $aif-arrow-double-bold-left; 
+  }
+}
+.aif-arrow-double-bold-right {
+  &:before {
+    content: $aif-arrow-double-bold-right; 
+  }
+}
+.aif-arrow-double-bold-up {
+  &:before {
+    content: $aif-arrow-double-bold-up; 
+  }
+}
+.aif-arrow-double-bold-down {
+  &:before {
+    content: $aif-arrow-double-bold-down; 
+  }
+}
+.aif-arrow-double-left {
+  &:before {
+    content: $aif-arrow-double-left; 
+  }
+}
+.aif-arrow-double-right {
+  &:before {
+    content: $aif-arrow-double-right; 
+  }
+}
+.aif-arrow-double-up {
+  &:before {
+    content: $aif-arrow-double-up; 
+  }
+}
+.aif-arrow-double-down {
+  &:before {
+    content: $aif-arrow-double-down; 
+  }
+}
+.aif-brain {
+  &:before {
+    content: $aif-brain; 
+  }
+}
+.aif-camera {
+  &:before {
+    content: $aif-camera; 
+  }
+}
+.aif-edit {
+  &:before {
+    content: $aif-edit; 
+  }
+}
+.aif-folder {
+  &:before {
+    content: $aif-folder; 
+  }
+}
+.aif-headphones {
+  &:before {
+    content: $aif-headphones; 
+  }
+}
+.aif-home-bold {
+  &:before {
+    content: $aif-home-bold; 
+  }
+}
+.aif-home {
+  &:before {
+    content: $aif-home; 
+  }
+}
+.aif-magnifier {
+  &:before {
+    content: $aif-magnifier; 
+  }
+}
+.aif-mail {
+  &:before {
+    content: $aif-mail; 
+  }
+}
+.aif-money {
+  &:before {
+    content: $aif-money; 
+  }
+}
+.aif-phone-bold {
+  &:before {
+    content: $aif-phone-bold; 
+  }
+}
+.aif-phone-ringing {
+  &:before {
+    content: $aif-phone-ringing; 
+  }
+}
+.aif-pin {
+  &:before {
+    content: $aif-pin; 
+  }
+}
+.aif-placeholder {
+  &:before {
+    content: $aif-placeholder; 
+  }
+}
+.aif-tax {
+  &:before {
+    content: $aif-tax; 
+  }
+}
+.aif-team {
+  &:before {
+    content: $aif-team; 
+  }
+}
+.aif-windows {
+  &:before {
+    content: $aif-windows; 
+  }
+}
+

@@ -1,16 +1,25 @@
 // Colors
-$white: #fff;
-$black: #222;
+$white: #fefefe;
+$black: #4f4f4f;
+$grey-light: #fcfcfc;
 $grey: #bbb;
-$accent: #fa0;
-$primary: #fa0;
+$accent: #b88530;
+$primary: #262f3d;
+$placeholder: #f1f1f1;
 
 // Typography
-$app-font: 'Open Sans', sans-serif;
-$app-font-size: 16px;
+$app-font: 'Gotham Pro', sans-serif;
+$accent-font: 'Playfair Display', sans-serif;
+$secondary-font: 'Circe', sans-serif;
+$sub-accent-font: 'Times New Roman', Times, serif;
+$app-font-size: 15px;
 $app-line-height: 1.5;
 $app-font-weight: 400;
 $app-letter-spacing: normal; // 0.05em === 50(photoshop)/1000
 
 // Transitions
 $trs: .15s;
+
+// Header
+$header-height: 76px;
+$header-mobile-height: 55px;

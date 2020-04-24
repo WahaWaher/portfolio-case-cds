@@ -10,6 +10,9 @@
   &-accent {
     color: $accent;
   }
+  &-primary {
+    color: $primary;
+  }
   &-white {
     color: $white;
   }
@@ -20,69 +23,52 @@
     color: $grey;
   }
   // Other
-  // &-nowrap {
-  //   white-space: nowrap;
-  // }
-  // &-middle {
-  //   vertical-align: middle;
-  // }
+  &-nowrap {
+    white-space: nowrap;
+  }
 }
 
 /**
- * Mix: pos
+ * Mix: font-{}
  */
-.pos {
-  // &-static {
-  //   position: static;
-  // }
-  // &-relative {
-  //   position: relative;
-  // }
-  // &-absolute {
-  //   position: absolute;
-  // }
+.font {
+  &-primary {
+    font-family: $app-font;
+  }
+  &-weight {
+    &-medium {
+      font-weight: 500;
+    }
+  }
+  &-style {
+    &-normal {
+      font-style: normal;
+    }
+  }
 }
-// @include media-breakpoint-up(sm) {
-//   .pos-sm-static {
-//     position: static;
-//   }
-// }
 
 /**
  * Mix: z-{}
  */
 .z {
-  // &-n1 {
-  //   z-index: -1 !important;
-  // }
-  // &-0 {
-  //   z-index: 0 !important;
-  // }
-  // &-1 {
-  //   z-index: 1 !important;
-  // }
+  &-0 {
+    z-index: 0 !important;
+  }
 }
 
 /**
  * Block: bg-{}
  */
 .bg {
-  // Colors
-  // &-white {
-  //   background-color: $white;
-  // }
-  // &-accent {
-  //   background-color: $accent;
-  // }
-}
-
-/**
- * Mix: mw-{}
- */
-.mw {
-  // &-300 {
-  //   max-width: 300px;
-  // }
+  &-placeholder {
+    background-color: $placeholder;
+  }
+  &-grey-light {
+    background-color: $grey-light;
+  }
+  &-white {
+    background-color: $white;
+  }
 }
 
 /**
@@ -93,15 +79,6 @@
     object-fit: cover;
     font-family: "object-fit: cover;";
   }
-  // &-contain {
-  //   object-fit: contain;
-  //   font-family: "object-fit: contain;";
-  // }
-  // &-full {
-  //   display: block;
-  //   width: 100%;
-  //   height: 100%;
-  // }
 }
 
 /**
@@ -111,4 +88,13 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+/**
+ * Mix: shadow-main
+ */
+.shadow {
+  &-main {
+    box-shadow: 0px 2px 10px rgba(1, 11, 48, 0.05);
+  }
 }

@@ -7,13 +7,8 @@
  */
 
 $animate-scss-default-duration: .75s;
-$animate-scss-second-delays: (); // (1, 2, 3)
-$animate-scss-durations: (
-  // fast: 800ms,
-  // faster: 500ms,
-  // slow: 2s,
-  // slower: 3s,
-);
+$animate-scss-second-delays: ();
+$animate-scss-durations: ();
 
 @import "@brightleaf/animate.scss/source/settings";
 

@@ -7,7 +7,7 @@ const {
   scriptsVendors,
   scriptsVendorsSep,
 } = require('./tasks/scripts');
-const { rootPagesHTML, rootPagesPHP } = require('./tasks/pages');
+const { rootPagesHTML, rootPagesPHP, includeHTML } = require('./tasks/pages');
 const { copyIMG, genFavicons, genSprite, copySVG } = require('./tasks/images');
 const {
   copyFonts,
@@ -31,6 +31,7 @@ exports['dev'] = series(
   parallel(cleanCSS, cleanJS),
   parallel(
     [
+      includeHTML,
       stylesApp,
       stylesVendors,
       scriptsApp,
@@ -57,13 +58,11 @@ exports['build'] = series(
     copyFonts,
     copyIMG,
     copySVG,
-    genSprite,
-    rootPagesHTML,
-    rootPagesPHP,
     copyRootOther,
-    copyCustom([`${source}/parts/**/*`], [`${build}/parts`]),
-    copyCustom([`${source}/pages/**/*`], [`${build}/pages`])
   ].filter(Boolean)),
+  includeHTML,
+  rootPagesHTML,
+  rootPagesPHP,
   watcher,
 );
 

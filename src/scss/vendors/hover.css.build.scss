@@ -1,0 +1,19 @@
+/*!
+ * Hover.css (custom build) (http://ianlunn.github.io/Hover/)
+ * Version: 2.x.x
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+ */
+@import "../../modules/hover.css/scss/options";
+@import "../../modules/hover.css/scss/mixins";
+@import "../../modules/hover.css/scss/hacks";
+
+@import "../../modules/hover.css/scss/effects/icons/icon-push";
+@if $includeClasses {
+  .#{$nameSpace}-icon-push {
+    @include icon-push();
+  }
+}

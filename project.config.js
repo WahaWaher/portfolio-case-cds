@@ -1,6 +1,6 @@
 const config = {
   source: 'src',
-  build: 'build',
+  build: 'docs',
 
   /**
    * Development
@@ -9,7 +9,6 @@ const config = {
     server: {
       server: 'src',
       port: 8000,
-      // proxy: 'gulp-common-template.loc',
       browser: 'chrome',
       open: false,
       notify: false,
@@ -23,7 +22,7 @@ const config = {
       // vendor styles
       vendors: {
         min: true,
-        maps: true,
+        maps: false,
         separate: true,
       },
     },
@@ -45,11 +44,10 @@ const config = {
    */
   production: {
     server: {
-      server: 'build',
+      server: 'docs',
       port: 8080,
-      // proxy: 'gulp-common-template.loc',
       browser: 'chrome',
-      open: true,
+      open: false,
       notify: false,
     },
     css: {

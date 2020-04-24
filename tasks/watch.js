@@ -5,6 +5,7 @@ const { source, build } = config;
 // Tasks
 const { stylesApp, stylesVendors } = require('./styles');
 const { scriptsApp, scriptsVendors, scriptsVendorsSep } = require('./scripts');
+const { includeHTML } = require('./pages');
 const { server, reload } = require('./server');
 const { genSprite } = require('./images');
 
@@ -53,7 +54,7 @@ const watcher = () => {
   );
 
   // HTML
-  watch([`${source}/**/*.(html|php)`]).on('all', reload);
+  watch([`${source}/{page-templates,parts}/*.(html|php)`], includeHTML).on('all', reload);
 };
 
 module.exports = {

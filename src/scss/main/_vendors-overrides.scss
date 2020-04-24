@@ -1,0 +1,16 @@
+/**
+ * Fancybox global overrides
+ */
+// Scroll
+.compensate-for-scrollbar {
+  margin-right: 0 !important;
+}
+// Overlay
+.fancybox-is-open {
+  .fancybox-bg {
+    opacity: .8;
+  }
+}
+.fancybox-bg {
+  background: $grey-light;
+}

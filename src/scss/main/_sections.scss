@@ -6,19 +6,124 @@
 /**
  * Section: sct
  */
+$sct-gap-default: 6.2rem;
+$sct-gap-mobile: 4.15rem;
+
 .sct {
   position: relative;
+  &__bg {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &_gaps-y {
+    &_def {
+      padding-top: $sct-gap-default;
+      padding-bottom: $sct-gap-default;
+    }
+    &_top-header {
+      padding-top: $header-height/$app-font-size + $sct-gap-default;
+      padding-bottom: $sct-gap-default;
+    }
+  }
+  &_gaps-t {
+    &_def {
+      padding-top: $sct-gap-default;
+    }
+  }
+  &_gaps-b {
+    &_def {
+      padding-bottom: $sct-gap-default;
+    }
+  }
+  &_under-header {
+    padding-top: $header-height !important;
+  }
+}
+@include media-breakpoint-down(lg) {
+  .sct {
+    &_gaps-y {
+      &_def {
+        padding-top: $sct-gap-mobile;
+        padding-bottom: $sct-gap-mobile;
+      }
+      &_top-header {
+        padding-top: $header-height/$app-font-size + $sct-gap-mobile;
+        padding-bottom: $sct-gap-mobile;
+      }
+    }
+    &_gaps-t {
+      &_def {
+        padding-top: $sct-gap-mobile;
+      }
+    }
+    &_gaps-b {
+      &_def {
+        padding-bottom: $sct-gap-mobile;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .sct {
+    &_gaps-y {
+      &_top-header {
+        padding-top: $header-mobile-height/$app-font-size + $sct-gap-mobile;
+        padding-bottom: $sct-gap-mobile;
+      }
+    }
+  }
 }
 
 /**
  * Section: app
  */
-.app {}
+.app {
+  &_header_fixed {
+    .app-header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+    .sct__area {
+      padding-top: $header-height;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .app {
+    &_header_fixed {
+      .app-header {}
+      .sct__area {
+        padding-top: $header-mobile-height;
+      }
+      .drawe_main {
+        top: $header-mobile-height;
+      }
+    }
+  }
+}
 
 /**
  * Section: app-header
  */
-.app-header {}
+.app-header {
+  height: $header-height;
+  background-color: rgba($white, .9);
+  padding: 0.53rem 0;
+  position: relative;
+}
+@include media-breakpoint-down(sm) {
+  .app-header {
+    height: $header-mobile-height;
+  }
+}
 
 /**
  * Section: app-page
@@ -28,4 +133,21 @@
 /**
  * Section: app-footer
  */
-.app-footer {}
+.app-footer {
+  background-color: $white;
+  padding: 2.05rem 0 1.75rem;
+}
+
+/**
+ * Section: sct-contact
+ */
+.sct-contact {
+  min-height: 100vh;
+}
+
+/**
+ * Section: sct-about
+ */
+.sct-about {
+  min-height: 100vh;
+}

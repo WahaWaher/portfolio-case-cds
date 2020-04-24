@@ -7,38 +7,76 @@
 
 // font-weight-doc: https://developer.mozilla.org/ru/docs/Web/CSS/font-weight
 
-// 100, Thin (Hairline)
-// @include font-face('Open Sans', '../fonts/OpenSans-Thin/OpenSans-Thin', 100, normal);
-// @include font-face('Open Sans', '../fonts/OpenSans-ThinItalic/OpenSans-ThinItalic', 100, italic);
-
-// 200, ExtraLight (UltraLight)
-// @include font-face('Open Sans', '../fonts/OpenSans-ExtraLight/OpenSans-ExtraLight', 200, normal);
-// @include font-face('Open Sans', '../fonts/OpenSans-ExtraLightItalic/OpenSans-ExtraLightItalic', 200, italic);
+/**
+ * Gotham Pro
+ */
 
 // 300, Light
-@include font-face('Open Sans', '../fonts/OpenSans-Light/OpenSans-Light', 300, normal);
-@include font-face('Open Sans', '../fonts/OpenSans-LightItalic/OpenSans-LightItalic', 300, italic);
+// @include font-face('Gotham Pro', '../fonts/GothamPro-Light/GothamPro-Light', 300, normal);
+// @include font-face('Gotham Pro', '../fonts/GothamPro-LightItalic/GothamPro-LightItalic', 300, italic);
 
 // 400, Regular
-@include font-face('Open Sans', '../fonts/OpenSans-Regular/OpenSans-Regular', 400, normal);
-@include font-face('Open Sans', '../fonts/OpenSans-Italic/OpenSans-Italic', 400, italic);
+@include font-face('Gotham Pro', '../fonts/GothamPro-Regular/GothamPro-Regular', 400, normal);
+@include font-face('Gotham Pro', '../fonts/GothamPro-Italic/GothamPro-Italic', 400, italic);
 
 // 500, Medium
-// @include font-face('Open Sans', '../fonts/OpenSans-Medium/OpenSans-Medium', 500, normal);
-// @include font-face('Open Sans', '../fonts/OpenSans-MediumItalic/OpenSans-MediumItalic', 500, italic);
-
-// 600, SemiBold (Demi Bold)
-@include font-face('Open Sans', '../fonts/OpenSans-SemiBold/OpenSans-SemiBold', 600, normal);
-@include font-face('Open Sans', '../fonts/OpenSans-SemiBoldItalic/OpenSans-SemiBoldItalic', 600, italic);
+@include font-face('Gotham Pro', '../fonts/GothamPro-Medium/GothamPro-Medium', 500, normal);
+@include font-face('Gotham Pro', '../fonts/GothamPro-MediumItalic/GothamPro-MediumItalic', 500, italic);
 
 // 700, Bold
-@include font-face('Open Sans', '../fonts/OpenSans-Bold/OpenSans-Bold', 700, normal);
-@include font-face('Open Sans', '../fonts/OpenSans-BoldItalic/OpenSans-BoldItalic', 700, italic);
-
-// 800, ExtraBold (UltraBold)
-@include font-face('Open Sans', '../fonts/OpenSans-ExtraBold/OpenSans-ExtraBold', 800, normal);
-@include font-face('Open Sans', '../fonts/OpenSans-ExtraBoldItalic/OpenSans-ExtraBoldItalic', 800, italic);
+@include font-face('Gotham Pro', '../fonts/GothamPro-Bold/GothamPro-Bold', 700, normal);
+@include font-face('Gotham Pro', '../fonts/GothamPro-BoldItalic/GothamPro-BoldItalic', 700, italic);
 
 // 900, Black (Heavy)
-// @include font-face('Open Sans', '../fonts/OpenSans-Black/OpenSans-Black', 900, normal);
-// @include font-face('Open Sans', '../fonts/OpenSans-BlackItalic/OpenSans-BlackItalic', 900, italic);
+// @include font-face('Gotham Pro', '../fonts/GothamPro-Black/GothamPro-Black', 900, normal);
+// @include font-face('Gotham Pro', '../fonts/GothamPro-BlackItalic/GothamPro-BlackItalic', 900, italic);
+
+/**
+ * Playfair Display
+ */
+
+// 400, Regular
+@include font-face('Playfair Display', '../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular', 400, normal);
+@include font-face('Playfair Display', '../fonts/PlayfairDisplay-Italic/PlayfairDisplay-Italic', 400, italic);
+
+// 500, Medium
+@include font-face('Playfair Display', '../fonts/PlayfairDisplay-Medium/PlayfairDisplay-Medium', 500, normal);
+@include font-face('Playfair Display', '../fonts/PlayfairDisplay-MediumItalic/PlayfairDisplay-MediumItalic', 500, italic);
+
+// 600, SemiBold (Semi Bold)
+// @include font-face('Playfair Display', '../fonts/PlayfairDisplay-SemiBold/PlayfairDisplay-SemiBold', 600, normal);
+// @include font-face('Playfair Display', '../fonts/PlayfairDisplay-SemiBoldItalic/PlayfairDisplay-SemiBoldItalic', 600, italic);
+
+// 700, Bold
+@include font-face('Playfair Display', '../fonts/PlayfairDisplay-Bold/PlayfairDisplay-Bold', 700, normal);
+@include font-face('Playfair Display', '../fonts/PlayfairDisplay-BoldItalic/PlayfairDisplay-BoldItalic', 700, italic);
+
+// 800, ExtraBold (UltraBold)
+// @include font-face('Playfair Display', '../fonts/PlayfairDisplay-ExtraBold/PlayfairDisplay-ExtraBold', 800, normal);
+// @include font-face('Playfair Display', '../fonts/PlayfairDisplay-ExtraBoldItalic/PlayfairDisplay-ExtraBoldItalic', 800, italic);
+
+// 900, Black (Heavy)
+// @include font-face('Playfair Display', '../fonts/PlayfairDisplay-Black/PlayfairDisplay-Black', 900, normal);
+// @include font-face('Playfair Display', '../fonts/PlayfairDisplay-BlackItalic/PlayfairDisplay-BlackItalic', 900, italic);
+
+/**
+ * Circe
+ */
+
+// 100, Thin (Hairline)
+// @include font-face('Circe', '../fonts/Circe-Thin/Circe-Thin', 100, normal);
+
+// 200, ExtraLight (UltraLight)
+// @include font-face('Circe', '../fonts/Circe-ExtraLight/Circe-ExtraLight', 200, normal);
+
+// 300, Light
+// @include font-face('Circe', '../fonts/Circe-Light/Circe-Light', 300, normal);
+
+// 400, Regular
+@include font-face('Circe', '../fonts/Circe-Regular/Circe-Regular', 400, normal);
+
+// 700, Bold
+// @include font-face('Circe', '../fonts/Circe-Bold/Circe-Bold', 700, normal);
+
+// 800, ExtraBold (UltraBold)
+// @include font-face('Circe', '../fonts/Circe-ExtraBold/Circe-ExtraBold', 800, normal);
